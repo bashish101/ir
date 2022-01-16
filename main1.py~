@@ -26,7 +26,7 @@ def main():
     pos_score = tfidf_model.match(query_vec, pos_doc_vec)
     neg_score = tfidf_model.match(query_vec, neg_doc_vec)
     print('Query: {0} \n\nPositive Document: {1} \n\nNegative Document: {2}\n\n'.format(*text_data[idx]))
-    print('First document score = {0:.2f} \nSecond document score = {1:.2f}'.format(pos_score, neg_score))
+    print('First document score = {0:.2f} \n Second document score = {1:.2f}'.format(pos_score, neg_score))
           
 if __name__ == '__main__':
     main()

@@ -57,7 +57,7 @@ def train(model, data, n_epochs = 10, mini_batch_size = 16):
             train_loss += loss.item()
             
             if batch_idx % 100 == 0:
-                msg = 'Epoch: {0}  Training Batch: {1} Loss: {2:.2f}   '.format(epoch, batch_idx, loss.item())
+                msg = 'Epoch: {0}  Training Batch: {1} Loss: {2:.2f}'.format(epoch, batch_idx, loss.item())
                 print(msg, end = '\r')
     
         # Validation
@@ -77,7 +77,7 @@ def train(model, data, n_epochs = 10, mini_batch_size = 16):
                 val_loss += loss.item()
                             
                 if batch_idx % 100 == 0:
-                    msg = 'Epoch: {0} Validation Batch: {1} Loss: {2:.2f}   '.format(epoch, batch_idx, loss.item())
+                    msg = 'Epoch: {0} Validation Batch: {1} Loss: {2:.2f}'.format(epoch, batch_idx, loss.item())
                     print(msg, end = '\r')
                     
         # Display average loss values

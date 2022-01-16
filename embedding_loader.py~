@@ -50,7 +50,7 @@ def create_embedding_matrix(word2idx_dict, vocab, emb_path = "./glove.6B/glove.6
     with open(save_path, 'wb') as fp:
         np.save(fp, embed_mat)
     
-    print('Embedding matrix saved successfully to location {}'.format(save_path))
+    print('Embedding matrix saved successfully to location {}'.format(emb_path))
     return embed_mat
 
 
